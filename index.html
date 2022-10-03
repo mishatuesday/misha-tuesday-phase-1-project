@@ -8,16 +8,28 @@
         <div id="header">
             <span id="headline">Random Acts of Random</span>
             <p>Mission generator and tracker</p>
-            <button id="gimme">Add a New Mission!</button>
+            <button id="gimme">Get All New Missions!</button>
+            <input type="checkbox" id="are-you-sure">
+            <label for="are-you-sure">confirm</label>
         </div>
         <div id="mission-collection">
+            click a mission to see details:
             <!-- navigate between missions here -->
         </div>
         <div id="mission-detail">
             <!-- stuff about selected mission -->
+            <div id="mission-name">
+                <!-- mission name -->
+            </div>
             <img id="detail-image" src="assets/RAoR.png" />
+            <span id="mission-status"></span>
+            <br clear="all" />
+            <a id="mission-link" href="">More Information</a>
+            <!-- <br clear="all" /> -->
         </div>
         <div id="mission-mod-menu">
+            modify mission
+            <button id="mission-complete">mark completed</button>
             <!-- mark complete, add different image -->
         </div>
     </body>

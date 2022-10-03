@@ -2,6 +2,7 @@
 
 const libraryUrl = "http://localhost:3000/missions/"
 const assignedMissionsUrl = "http://localhost:3000/assigned/"
+const completeIcon = "assets/icon-complete.png"
 let assignedMissions = []
 document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
 
@@ -44,46 +45,78 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
         }
       
         for (x=0; x<6; x++) {
-            assignedMissions[x] = missions[x]
-            assignedMissions[x].id = x+1
-            const configObject = {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
-                },
-                body: JSON.stringify(assignedMissions[x])
-                }
-                fetch(assignedMissionsUrl, configObject)
-                .catch(err => alert(err))
+            assignMission(x, missions)
         }
         // *** POST to assignedMissionsUrl ***
-            assignedMissions.forEach((mission) => displayNav(mission))
+        assignedMissions.forEach((mission) => displayNav(mission))
+    }
+    
+    function assignMission(x, missions) {
+    assignedMissions[x] = missions[x]
+    assignedMissions[x].id = x+1
+    const date = getTodaysDate()
+    assignedMissions[x].status = `assigned: ${date}`
+    const configObject = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(assignedMissions[x])
         }
+        fetch(assignedMissionsUrl, configObject)
+        .catch(err => alert(err))
+    }
 
-
-function displayNav(mission) {
-    const newMission = document.createElement("p")
-    const newImg = document.createElement("img")
-    const newName = document.createElement("span")
-    newImg.src = mission.image
-    newImg.id = mission.id
-    newImg.className = "nav-icon"
-    newName.textContent = mission.name
-    newName.id = mission.id 
-    newMission.id = mission.id
-    newMission.onmouseover = function() {this.style.background = "#FFFFAA"}
-    newMission.onmouseout = function() {this.style.background = "white"}
-    newMission.appendChild(newImg)
-    newMission.appendChild(newName)
-    document.getElementById("mission-collection").appendChild(newMission)
+    function displayNav(mission) {
+        const newMission = document.createElement("p")
+        const newImg = document.createElement("img")
+        const newName = document.createElement("span")
+        newName.textContent = mission.name
+        newName.id = mission.id 
+        newMission.id = mission.id
+        if (mission.status === "complete") {
+            newImg.src = completeIcon
+        } else {
+            newImg.src = mission.image
+        }
+        newImg.className = "nav-icon"
+        newImg.alt = mission.type
+        newImg.id = mission.id
+        
+        newMission.onmouseover = function() {this.style.background = "#FFFFAA"}
+        newMission.onmouseout = function() {this.style.background = "white"}
+        newMission.appendChild(newImg)
+        newMission.appendChild(newName)
+        document.getElementById("mission-collection").appendChild(newMission)
 }
 
 function showDetail(e) {
     if (e.target.id !== "mission-collection") {
-        document.getElementById("detail-image").src = assignedMissions[e.target.id-1].image
-        
+        const detailImg = document.getElementById("detail-image")
+        detailImg.src = assignedMissions[e.target.id-1].image
+        detailImg.alt = assignedMissions[e.target.id-1].type
+        document.getElementById("mission-name").textContent = assignedMissions[e.target.id-1].name
+        document.getElementById("mission-status").textContent = assignedMissions[e.target.id-1].status
+        document.getElementById("mission-complete").style.display = "block"
+        document.getElementById("mission-mod-menu").style.display = "block"
+        if (assignedMissions[e.target.id-1].link != "") {
+            document.getElementById("mission-link").style.display = "block"
+            document.getElementById("mission-link").href = assignedMissions[e.target.id-1].link
+        } else {
+            document.getElementById("mission-link").style.display = "none"
+        }
     }
+}
+
+function getTodaysDate() {
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear() - 2000;
+
+    today = mm + '/' + dd + '/' + yyyy;
+    return today
 }
 
 getAssingedMissions()

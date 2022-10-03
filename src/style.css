@@ -2,7 +2,30 @@
     display: block;
 }
 
+button {
+    padding: 3px;
+}
+
+#mission-complete {
+    display: none;
+}
+
+/* #mission-mod-menu {
+    display: none;
+} */
+
+#mission-link {
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-block: 10px;
+    border-spacing: 10px;
+    display: none;
+}
+
 #mission-collection {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
     width: 25%;
     float: left;
     padding: 5px;
@@ -16,22 +39,31 @@
 
 #mission-detail {
     width: 70%;
-    float:right;
+    float: right;
     padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
 }
 
 #mission-detail span {
-    vertical-align: top;
+    font-size: medium;
+    color: gray;
 }
 
 #mission-detail img {
-float: left;
-max-width: 300px;
-height: auto;
+    float: left;
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
 }
 
 .nav-icon {
@@ -50,6 +82,20 @@ p {
     border-radius: 15px;
 }
 
+
+
 #header span {
     font-size: xx-large;
+}
+
+#mission-mod-menu {
+    display: none;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    clear: right;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
 }
