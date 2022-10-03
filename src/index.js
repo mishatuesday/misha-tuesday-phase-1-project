@@ -7,7 +7,7 @@ const missionLink = document.getElementById("mission-link")
 let assignedMissions = []
 let selectedMission
 document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
-document.getElementById("mission-complete").addEventListener("click", () => markComplete())
+document.getElementById("mission-complete").addEventListener("click", (e) => markComplete(e))
 
 function getAssingedMissions() {
     fetch(assignedMissionsUrl)
@@ -79,7 +79,7 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
         const newImg = document.createElement("img")
         const newName = document.createElement("span")
         newName.textContent = mission.name
-        newName.id = mission.id 
+        // newName.id = mission.id 
         if (mission.status === "complete") {
             newImg.src = completeIcon
         } else {
@@ -87,7 +87,7 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
         }
         newImg.className = "nav-icon"
         newImg.alt = mission.type
-        newImg.id = mission.id
+        // newImg.id = mission.id
         
         newMission.id = mission.id
         newMission.onmouseover = function() {this.style.background = "#FFFFAA"}
@@ -99,21 +99,26 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
 
 function showDetail(e) {
     if (e.target.id !== "mission-collection") {
-        selectedMission = e.target.id
+        if (parseInt(e.target.id) > 0) {
+            selectedMission = e.target.id
+        } else {
+            selectedMission = e.target.parentElement.id
+        }
+        // selectedMission = e.target.id
         const detailImg = document.getElementById("detail-image")
-        detailImg.src = assignedMissions[e.target.id-1].image
-        detailImg.alt = assignedMissions[e.target.id-1].type
-        document.getElementById("mission-name").textContent = assignedMissions[e.target.id-1].name
-        document.getElementById("mission-status").textContent = assignedMissions[e.target.id-1].status
+        detailImg.src = assignedMissions[selectedMission-1].image
+        detailImg.alt = assignedMissions[selectedMission-1].type
+        document.getElementById("mission-name").textContent = assignedMissions[selectedMission-1].name
+        document.getElementById("mission-status").textContent = assignedMissions[selectedMission-1].status
         document.getElementById("mission-complete").style.display = "block"
         document.getElementById("mission-mod-menu").style.display = "block"
-        if (assignedMissions[e.target.id-1].link != "") {
+        if (assignedMissions[selectedMission-1].link != "") {
             missionLink.style.display = "block"
-            missionLink.href = assignedMissions[e.target.id-1].link
+            missionLink.href = assignedMissions[selectedMission-1].link
         } else {
             missionLink.style.display = "none"
         }
-        if (assignedMissions[e.target.id-1].status === "complete") {
+        if (assignedMissions[selectedMission-1].status === "complete") {
             document.getElementById("mission-mod-menu").style.display = "none"
         } else {
             document.getElementById("mission-mod-menu").style.display = "block"
@@ -131,7 +136,28 @@ function getTodaysDate() {
 }
 
 function markComplete() {
-    console.log(`selected mission: ${selectedMission}`)
+    // change status of assignedMissions[selectedMission-1]
+    assignedMissions[selectedMission-1].status = "complete"
+    const configObject = {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            status: "complete"
+        })
+    }
+    fetch(`${assignedMissionsUrl}${selectedMission}`, configObject)
+    .catch(err => alert(err))
+    // change nav icon
+    const navImg = document.getElementById(selectedMission).getElementsByTagName("img")[0]
+    navImg.src = completeIcon
+    // change status in detail
+    document.getElementById("mission-status").textContent = "complete"
+    // hide mission-mod-menu
+    document.getElementById("mission-mod-menu").style.display = "none"
 }
+
 
 getAssingedMissions()

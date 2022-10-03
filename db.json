@@ -2887,7 +2887,7 @@
       "link": "https://en.wikipedia.org/wiki/French_press",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "assigned: 10/03/22",
+      "status": "complete",
       "id": 1
     },
     {
@@ -2895,7 +2895,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "assigned: 10/03/22",
+      "status": "complete",
       "id": 2
     },
     {
@@ -2903,7 +2903,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned: 10/03/22",
+      "status": "complete",
       "id": 3
     },
     {
@@ -2919,7 +2919,7 @@
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "assigned: 10/03/22",
+      "status": "complete",
       "id": 5
     },
     {
