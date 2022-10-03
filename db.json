@@ -2883,52 +2883,52 @@
   ],
   "assigned": [
     {
-      "name": "Draw and color a Mandala",
-      "link": "https://en.wikipedia.org/wiki/Mandala",
-      "image": "assets/icon-relaxation.png",
-      "type": "Relaxation",
-      "status": "unassigned",
-      "id": 212
-    },
-    {
-      "name": "Hold a yard sale",
+      "name": "Host a movie marathon with some friends",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
       "status": "unassigned",
-      "id": 223
+      "id": 2
     },
     {
-      "name": "Prepare a dish from a foreign culture",
+      "name": "Give your pet ten minutes of focused attention",
+      "link": "",
+      "image": "assets/icon-relaxation.png",
+      "type": "Relaxation",
+      "status": "unassigned",
+      "id": 1
+    },
+    {
+      "name": "Go to a concert with some friends",
+      "link": "",
+      "image": "assets/icon-social.png",
+      "type": "Social",
+      "status": "unassigned",
+      "id": 4
+    },
+    {
+      "name": "Create a meal plan for the coming week",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
       "status": "unassigned",
-      "id": 344
+      "id": 3
     },
     {
-      "name": "Learn how to fold a paper crane",
-      "link": "",
+      "name": "Learn how to make an Alexa skill",
+      "link": "https://developer.amazon.com/en-US/docs/alexa/custom-skills/steps-to-build-a-custom-skill.html",
       "image": "assets/icon-education.png",
       "type": "Education",
       "status": "unassigned",
-      "id": 73
+      "id": 5
     },
     {
-      "name": "Pick up litter around your favorite park",
+      "name": "Catch up with a friend over a lunch date",
       "link": "",
-      "image": "assets/icon-charity.png",
-      "type": "Charity",
+      "image": "assets/icon-social.png",
+      "type": "Social",
       "status": "unassigned",
-      "id": 17
-    },
-    {
-      "name": "Patronize a local independent restaurant",
-      "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
-      "status": "unassigned",
-      "id": 209
+      "id": 6
     }
   ]
 }

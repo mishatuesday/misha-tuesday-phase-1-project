@@ -3,18 +3,31 @@
 }
 
 #mission-collection {
-    width: 30%;
+    width: 25%;
     float: left;
-}
-
-#mission-detail img {
-    max-width: 400px;
-    height: auto;
+    padding: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 15px;
+    max-height: 600px;
+    overflow: scroll;
 }
 
 #mission-detail {
     width: 70%;
-    float:right
+    float:right;
+    padding: 5px;
+}
+
+#mission-detail span {
+    vertical-align: top;
+}
+
+#mission-detail img {
+float: left;
+max-width: 300px;
+height: auto;
 }
 
 p {
@@ -24,4 +37,19 @@ p {
 .nav-icon {
     max-width: 50px;
     height: auto;
+}
+
+#header {
+    width: auto;
+    align-content: center;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+
+#header span {
+    font-size: xx-large;
 }

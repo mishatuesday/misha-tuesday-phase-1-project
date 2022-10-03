@@ -3,6 +3,7 @@
 const libraryUrl = "http://localhost:3000/missions/"
 const assignedMissionsUrl = "http://localhost:3000/assigned/"
 let assignedMissions = []
+document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
 
 function getAssingedMissions() {
     fetch(assignedMissionsUrl)
@@ -44,6 +45,7 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
       
         for (x=0; x<6; x++) {
             assignedMissions[x] = missions[x]
+            assignedMissions[x].id = x+1
             const configObject = {
                 method: "POST",
                 headers: {
@@ -68,12 +70,20 @@ function displayNav(mission) {
     newImg.id = mission.id
     newImg.className = "nav-icon"
     newName.textContent = mission.name
-    newName.id = mission.id
+    newName.id = mission.id 
+    newMission.id = mission.id
+    newMission.onmouseover = function() {this.style.background = "#FFFFAA"}
+    newMission.onmouseout = function() {this.style.background = "white"}
     newMission.appendChild(newImg)
     newMission.appendChild(newName)
     document.getElementById("mission-collection").appendChild(newMission)
 }
 
-
+function showDetail(e) {
+    if (e.target.id !== "mission-collection") {
+        document.getElementById("detail-image").src = assignedMissions[e.target.id-1].image
+        
+    }
+}
 
 getAssingedMissions()
