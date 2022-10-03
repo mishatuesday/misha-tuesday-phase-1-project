@@ -3,6 +3,7 @@
 const libraryUrl = "http://localhost:3000/missions/"
 const assignedMissionsUrl = "http://localhost:3000/assigned/"
 const completeIcon = "assets/icon-complete.png"
+const missionLink = document.getElementById("mission-link")
 let assignedMissions = []
 document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
 
@@ -10,7 +11,10 @@ function getAssingedMissions() {
     fetch(assignedMissionsUrl)
     .then(resp => resp.json())
     .then((missions) => initializeMenu(missions))
-    // .catch(err => alert(err))
+    .catch(err => alert(err))
+    // the get new missions button just has to delete
+    // all the assigned missions from db.json
+    // and call this funciton (i think)
 }
 
 function initializeMenu(missions) {
@@ -101,10 +105,10 @@ function showDetail(e) {
         document.getElementById("mission-complete").style.display = "block"
         document.getElementById("mission-mod-menu").style.display = "block"
         if (assignedMissions[e.target.id-1].link != "") {
-            document.getElementById("mission-link").style.display = "block"
-            document.getElementById("mission-link").href = assignedMissions[e.target.id-1].link
+            missionLink.style.display = "block"
+            missionLink.href = assignedMissions[e.target.id-1].link
         } else {
-            document.getElementById("mission-link").style.display = "none"
+            missionLink.style.display = "none"
         }
     }
 }
