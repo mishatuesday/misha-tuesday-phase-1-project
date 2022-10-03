@@ -5,7 +5,9 @@ const assignedMissionsUrl = "http://localhost:3000/assigned/"
 const completeIcon = "assets/icon-complete.png"
 const missionLink = document.getElementById("mission-link")
 let assignedMissions = []
+let selectedMission
 document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
+document.getElementById("mission-complete").addEventListener("click", () => markComplete())
 
 function getAssingedMissions() {
     fetch(assignedMissionsUrl)
@@ -97,6 +99,7 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
 
 function showDetail(e) {
     if (e.target.id !== "mission-collection") {
+        selectedMission = e.target.id
         const detailImg = document.getElementById("detail-image")
         detailImg.src = assignedMissions[e.target.id-1].image
         detailImg.alt = assignedMissions[e.target.id-1].type
@@ -125,6 +128,10 @@ function getTodaysDate() {
     var yyyy = today.getFullYear() - 2000;
     today = mm + '/' + dd + '/' + yyyy;
     return today
+}
+
+function markComplete() {
+    console.log(`selected mission: ${selectedMission}`)
 }
 
 getAssingedMissions()
