@@ -151,9 +151,12 @@ function markComplete() {
     fetch(`${assignedMissionsUrl}${selectedMission}`, configObject)
     .catch(err => alert(err))
     // change nav icon
-    // um how
-    
-    // redisplay selectedMission
+    const navImg = document.getElementById(selectedMission).getElementsByTagName("img")[0]
+    navImg.src = completeIcon
+    // change status in detail
+    document.getElementById("mission-status").textContent = "complete"
+    // hide mission-mod-menu
+    document.getElementById("mission-mod-menu").style.display = "none"
 }
 
 
