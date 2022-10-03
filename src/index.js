@@ -78,7 +78,6 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
         const newName = document.createElement("span")
         newName.textContent = mission.name
         newName.id = mission.id 
-        newMission.id = mission.id
         if (mission.status === "complete") {
             newImg.src = completeIcon
         } else {
@@ -88,6 +87,7 @@ function shuffleMissions(missions) { // i got this array shuffle function from s
         newImg.alt = mission.type
         newImg.id = mission.id
         
+        newMission.id = mission.id
         newMission.onmouseover = function() {this.style.background = "#FFFFAA"}
         newMission.onmouseout = function() {this.style.background = "white"}
         newMission.appendChild(newImg)
@@ -110,6 +110,11 @@ function showDetail(e) {
         } else {
             missionLink.style.display = "none"
         }
+        if (assignedMissions[e.target.id-1].status === "complete") {
+            document.getElementById("mission-mod-menu").style.display = "none"
+        } else {
+            document.getElementById("mission-mod-menu").style.display = "block"
+        }
     }
 }
 
@@ -118,7 +123,6 @@ function getTodaysDate() {
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear() - 2000;
-
     today = mm + '/' + dd + '/' + yyyy;
     return today
 }
