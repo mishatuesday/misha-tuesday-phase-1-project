@@ -77,7 +77,7 @@ function sendToDb(mission) {
         name: mission.activity,
         link: mission.link,
         image: missionImage,
-        type: missionType
+        type: missionType,
         status: "unassigned"
     }
     const configObject = {

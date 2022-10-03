@@ -1,3 +1,27 @@
 #gimme {
     display: block;
 }
+
+#mission-collection {
+    width: 30%;
+    float: left;
+}
+
+#mission-detail img {
+    max-width: 400px;
+    height: auto;
+}
+
+#mission-detail {
+    width: 70%;
+    float:right
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-icon {
+    max-width: 50px;
+    height: auto;
+}
