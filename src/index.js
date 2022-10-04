@@ -3,6 +3,7 @@
 const missionsUrl = "http://localhost:3000/missions/"
 const completeIcon = "assets/icon-complete.png"
 const missionLink = document.getElementById("mission-link")
+const statusBar = document.getElementById("mission-status")
 let allMissions = []
 let assignedMissions = []
 let selectedMission
@@ -25,7 +26,7 @@ function initialize(missions) {
     allMissions = missions
     allMissions.forEach((mission) => checkAssigned(mission))
     // checkAssigned pushes into assignedMissions if they aren't unassigned.
-    if (assignedMissions.length === 0) {
+    if (assignedMissions.length < 5) {
         shuffleMissions(allMissions)
         // *** shuffleMissions must push into assignedMissions via assignMission(mission)
     }
@@ -143,7 +144,7 @@ const detailImg = document.getElementById("detail-image")
 detailImg.src = thisMission.image
 detailImg.alt = thisMission.type
 document.getElementById("mission-name").textContent = thisMission.name
-document.getElementById("mission-status").textContent = thisMission.status
+statusBar.textContent = thisMission.status
 document.getElementById("mission-complete").style.display = "block"
 document.getElementById("mission-mod-menu").style.display = "block"
 if (thisMission.link != "") {
@@ -154,8 +155,10 @@ if (thisMission.link != "") {
 }
 if (thisMission.status === "complete") {
     document.getElementById("mission-mod-menu").style.display = "none"
+    statusBar.style.color = "green"
 } else {
     document.getElementById("mission-mod-menu").style.display = "block"
+    statusBar.style.color = "gray"
 }
 }
 
@@ -174,7 +177,7 @@ function markComplete() {
     // how to get index number from database id number??
     // assignedMissions[selectedMission-1].status = "complete" // this is not the way
     assignedMissions.forEach(mission => {
-        if (mission.id === selectedMission) {
+        if (mission.id === parseInt(selectedMission)) {
             mission.status = "complete"
         }
     })
@@ -193,10 +196,13 @@ function markComplete() {
     // change nav icon
     const navImg = document.getElementById(selectedMission).getElementsByTagName("img")[0]
     navImg.src = completeIcon
+    displayDetail(selectedMission)
+    //can I do the below by just calling displayDetail?
     // change status in detail
-    document.getElementById("mission-status").textContent = "complete"
-    // hide mission-mod-menu
-    document.getElementById("mission-mod-menu").style.display = "none"
+    // document.statusBar.textContent = "complete"
+    // document.statusBar.style.color = "green"
+    // // hide mission-mod-menu
+    // document.getElementById("mission-mod-menu").style.display = "none"
 }
 
 function addCustomImage(e) {

@@ -877,7 +877,7 @@
       "link": "https://en.wikipedia.org/wiki/Periodic_table",
       "image": "https://www.thoughtco.com/thmb/pLQknkmU62KHTXwDFDi4SeYWzKg=/1333x1000/smart/filters:no_upscale()/what-are-the-first-20-elements-608820-FINAL-5b758ab446e0fb002c67279a.png",
       "type": "Education",
-      "status": "complete",
+      "status": "unassigned",
       "id": 110
     },
     {
@@ -1589,7 +1589,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "complete",
+      "status": "unassigned",
       "id": 199
     },
     {
@@ -1645,7 +1645,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "unassigned",
+      "status": "complete",
       "id": 206
     },
     {
@@ -1733,7 +1733,7 @@
       "link": "",
       "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2020/04/woman-kneading-dough-bread.jpg?quality=82&strip=1",
       "type": "Cooking",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 217
     },
     {
@@ -1813,7 +1813,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "complete",
       "id": 227
     },
     {
@@ -2189,7 +2189,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "complete",
+      "status": "unassigned",
       "id": 274
     },
     {
@@ -2277,7 +2277,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "complete",
       "id": 285
     },
     {
@@ -2685,7 +2685,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "complete",
       "id": 336
     },
     {
