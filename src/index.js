@@ -49,23 +49,9 @@ function checkAssigned(mission) {
 // }
 
 function shuffleMissions(missions) { 
-    // i got this array shuffle function from stackoverflow
-        // let currentIndex = missions.length,  randomIndex;
-      
-        // // While there remain elements to shuffle.
-        // while (currentIndex != 0) {
-      
-        //   // Pick a remaining element.
-        //   randomIndex = Math.floor(Math.random() * currentIndex);
-        //   currentIndex--;
-      
-        //   // And swap it with the current element.
-        //   [missions[currentIndex], missions[randomIndex]] = [
-        //     missions[randomIndex], missions[currentIndex]];
-        // }
 
       
-        for (x=assignedMissions.length; x<5; x++) {
+        for (x=assignedMissions.length-completedMissions; x<5; x++) {
             const randomMission = Math.floor(Math.random()*missions.length)
             if (missions[randomMission].status === "unassigned") {
                 assignMission(x, missions[randomMission])
@@ -83,7 +69,9 @@ function shuffleMissions(missions) {
     function assignMission(x, mission) {
         // where x is the index for assignedMissions[] and missions.id is the database ID number
     //     console.log("assignMission")
-    assignedMissions[x] = allMissions[mission.id]
+    assignedMissions[x] = allMissions[mission.id-1]
+    debugger
+    /// WTFF is wrong with this???? It's assigning wrong missions!!!! off by one!
     // // assignedMissions[x].id = x+1
     const date = getTodaysDate()
     assignedMissions[x].status = `assigned: ${date}`

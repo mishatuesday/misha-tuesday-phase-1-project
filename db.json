@@ -69,7 +69,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 9
     },
     {
@@ -77,7 +77,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "complete",
+      "status": "unassigned",
       "id": 10
     },
     {
@@ -589,7 +589,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 74
     },
     {
@@ -597,7 +597,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "complete",
+      "status": "unassigned",
       "id": 75
     },
     {
@@ -709,7 +709,7 @@
       "link": "https://github.com/explore",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 89
     },
     {
@@ -749,7 +749,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 94
     },
     {
@@ -853,7 +853,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 107
     },
     {
@@ -861,7 +861,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "complete",
+      "status": "unassigned",
       "id": 108
     },
     {
@@ -1293,7 +1293,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 162
     },
     {
@@ -1333,7 +1333,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 167
     },
     {
@@ -1393,18 +1393,18 @@
       "id": 174
     },
     {
-      "name": "Buy a new house decoration",
-      "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
-      "status": "unassigned",
-      "id": 175
-    },
-    {
       "name": "Learn a new recipe",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
+      "status": "unassigned",
+      "id": 175
+    },
+    {
+      "name": "Make up a joke",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
       "status": "unassigned",
       "id": 176
     },
@@ -2133,7 +2133,7 @@
       "link": "",
       "image": "assets/icon-music.png",
       "type": "Music",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 267
     },
     {
@@ -2253,7 +2253,7 @@
       "link": "https://en.wikipedia.org/wiki/Morse_code",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 282
     },
     {
@@ -2421,7 +2421,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 303
     },
     {
