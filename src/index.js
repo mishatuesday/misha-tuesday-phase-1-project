@@ -7,6 +7,7 @@ const statusBar = document.getElementById("mission-status")
 let allMissions = []
 let assignedMissions = []
 let selectedMission
+let completedMissions = 0
 document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
 document.getElementById("mission-complete").addEventListener("click", (e) => markComplete(e))
 document.getElementById("gimme").addEventListener("click", () => resetMissions())
@@ -31,12 +32,7 @@ function initialize(missions) {
         // *** shuffleMissions must push into assignedMissions via assignMission(mission)
     }
         assignedMissions.forEach((mission) => displayNav(mission))
-    
-    // // if (missions.length > 0) {
-    //     assignedMissions = missions
-    //     assignedMissions.forEach((mission) => displayNav(mission))
-    // } else {
-    //     getMissionsFromLibrary()
+        canReset()
     }
 
 function checkAssigned(mission) {
@@ -53,23 +49,9 @@ function checkAssigned(mission) {
 // }
 
 function shuffleMissions(missions) { 
-    // i got this array shuffle function from stackoverflow
-        // let currentIndex = missions.length,  randomIndex;
-      
-        // // While there remain elements to shuffle.
-        // while (currentIndex != 0) {
-      
-        //   // Pick a remaining element.
-        //   randomIndex = Math.floor(Math.random() * currentIndex);
-        //   currentIndex--;
-      
-        //   // And swap it with the current element.
-        //   [missions[currentIndex], missions[randomIndex]] = [
-        //     missions[randomIndex], missions[currentIndex]];
-        // }
 
       
-        for (x=assignedMissions.length; x<5; x++) {
+        for (x=assignedMissions.length-completedMissions; x<5; x++) {
             const randomMission = Math.floor(Math.random()*missions.length)
             if (missions[randomMission].status === "unassigned") {
                 assignMission(x, missions[randomMission])
@@ -87,7 +69,9 @@ function shuffleMissions(missions) {
     function assignMission(x, mission) {
         // where x is the index for assignedMissions[] and missions.id is the database ID number
     //     console.log("assignMission")
-    assignedMissions[x] = allMissions[mission.id]
+    assignedMissions[x] = allMissions[mission.id-1]
+    debugger
+    /// WTFF is wrong with this???? It's assigning wrong missions!!!! off by one!
     // // assignedMissions[x].id = x+1
     const date = getTodaysDate()
     assignedMissions[x].status = `assigned: ${date}`
@@ -106,6 +90,7 @@ function shuffleMissions(missions) {
     }
 
     function displayNav(mission) {
+        if (mission.status === "complete") completedMissions++
         const newMission = document.createElement("p")
         const newImg = document.createElement("img")
         const newName = document.createElement("span")
@@ -172,6 +157,7 @@ function getTodaysDate() {
 }
 
 function markComplete() {
+    completedMissions++
     thisMission = allMissions[selectedMission]
     // change status of assignedMission[?]
     // how to get index number from database id number??
@@ -197,12 +183,7 @@ function markComplete() {
     const navImg = document.getElementById(selectedMission).getElementsByTagName("img")[0]
     navImg.src = completeIcon
     displayDetail(selectedMission)
-    //can I do the below by just calling displayDetail?
-    // change status in detail
-    // document.statusBar.textContent = "complete"
-    // document.statusBar.style.color = "green"
-    // // hide mission-mod-menu
-    // document.getElementById("mission-mod-menu").style.display = "none"
+    canReset()
 }
 
 function addCustomImage(e) {
@@ -242,9 +223,14 @@ fetch(`${missionsUrl}${selectedMission}`, configObject)
     e.target.reset()
 }
 
-function resetMissions() {
+function canReset() {
+if (completedMissions / assignedMissions.length > .49) document.getElementById("gimme").style.display = "block"
+}
 
+function resetMissions() {
         console.log("resetMissions()")
+
+        document.getElementById("gimme").style.display = "none"
 }
 
 getAllMissions()

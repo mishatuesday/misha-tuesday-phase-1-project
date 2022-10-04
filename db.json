@@ -165,7 +165,7 @@
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "complete",
+      "status": "unassigned",
       "id": 21
     },
     {
@@ -1393,18 +1393,18 @@
       "id": 174
     },
     {
-      "name": "Buy a new house decoration",
-      "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
-      "status": "unassigned",
-      "id": 175
-    },
-    {
       "name": "Learn a new recipe",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
+      "status": "unassigned",
+      "id": 175
+    },
+    {
+      "name": "Make up a joke",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
       "status": "unassigned",
       "id": 176
     },
@@ -1645,7 +1645,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "complete",
+      "status": "unassigned",
       "id": 206
     },
     {
@@ -1813,7 +1813,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "complete",
+      "status": "unassigned",
       "id": 227
     },
     {
@@ -1845,7 +1845,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 231
     },
     {
@@ -1949,7 +1949,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 244
     },
     {
@@ -2037,7 +2037,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 255
     },
     {
@@ -2205,7 +2205,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 276
     },
     {
@@ -2277,7 +2277,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "complete",
+      "status": "unassigned",
       "id": 285
     },
     {
@@ -2493,7 +2493,7 @@
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 312
     },
     {
@@ -2685,7 +2685,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "complete",
+      "status": "unassigned",
       "id": 336
     },
     {
