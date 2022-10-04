@@ -21,7 +21,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 3
     },
     {
@@ -165,7 +165,7 @@
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "unassigned",
+      "status": "complete",
       "id": 21
     },
     {
@@ -525,7 +525,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 66
     },
     {
@@ -877,7 +877,7 @@
       "link": "https://en.wikipedia.org/wiki/Periodic_table",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 110
     },
     {
@@ -1069,7 +1069,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 134
     },
     {
@@ -1525,7 +1525,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 191
     },
     {
@@ -1589,7 +1589,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 199
     },
     {
@@ -1733,7 +1733,7 @@
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 217
     },
     {
@@ -2189,7 +2189,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 274
     },
     {
@@ -2325,7 +2325,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 291
     },
     {

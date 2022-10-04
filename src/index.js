@@ -77,7 +77,7 @@ function shuffleMissions(missions) {
                 shuffleMissions(missions)
             }
         }
-        // *** assign mission should PATCH to missionsUrl ***
+        // *** assign mission should PATCH CORRECTLY to missionsUrl ***
         // initialize should call displayNav
         // for (let index=0; index < assignedMissions.length; index++) {
         // displayNav(assignedMissions[index], index)
@@ -167,27 +167,34 @@ function getTodaysDate() {
 }
 
 function markComplete() {
-    // change status of assignedMissions[selectedMission-1]
-    // assignedMissions[selectedMission-1].status = "complete"
-    // const configObject = {
-    //     method: "PATCH",
-    //     headers: {
-    //         "Content-Type": "application/json",
-    //         "Accept": "application/json"
-    //     },
-    //     body: JSON.stringify({
-    //         status: "complete"
-    //     })
-    // }
-    // fetch(`${missionsUrl}${selectedMission}`, configObject)
-    // .catch(err => alert(err))
-    // // change nav icon
-    // const navImg = document.getElementById(selectedMission).getElementsByTagName("img")[0]
-    // navImg.src = completeIcon
-    // // change status in detail
-    // document.getElementById("mission-status").textContent = "complete"
-    // // hide mission-mod-menu
-    // document.getElementById("mission-mod-menu").style.display = "none"
+    thisMission = allMissions[selectedMission]
+    // change status of assignedMission[?]
+    // how to get index number from database id number??
+    // assignedMissions[selectedMission-1].status = "complete" // this is not the way
+    assignedMissions.forEach(mission => {
+        if (mission.id = selectedMission) {
+            mission.status = "complete"
+        }
+    })
+    const configObject = {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            status: "complete"
+        })
+    }
+    fetch(`${missionsUrl}${selectedMission}`, configObject)
+    .catch(err => alert(err))
+    // change nav icon
+    const navImg = document.getElementById(selectedMission).getElementsByTagName("img")[0]
+    navImg.src = completeIcon
+    // change status in detail
+    document.getElementById("mission-status").textContent = "complete"
+    // hide mission-mod-menu
+    document.getElementById("mission-mod-menu").style.display = "none"
 }
 
 function resetMissions() {
