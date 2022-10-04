@@ -269,7 +269,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "complete",
       "id": 34
     },
     {
@@ -777,11 +777,11 @@
       "id": 97
     },
     {
-      "name": "Teach your dog a new trick",
-      "link": "",
-      "image": "assets/icon-relaxation.png",
+      "name": "Build a Ziggurat",
+      "link": "https://en.wikipedia.org/wiki/Ziggurat",
+      "image": "assets/icon-diy.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "complete",
       "id": 98
     },
     {
@@ -1061,7 +1061,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 133
     },
     {
@@ -1177,9 +1177,9 @@
       "id": 147
     },
     {
-      "name": "Teach your dog a new trick",
+      "name": "Do a blind taste test of different brands",
       "link": "",
-      "image": "assets/icon-relaxation.png",
+      "image": "assets/icon-cooking.png",
       "type": "Relaxation",
       "status": "unassigned",
       "id": 148
@@ -1261,7 +1261,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "complete",
       "id": 158
     },
     {
@@ -1845,7 +1845,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 231
     },
     {
@@ -1949,7 +1949,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 244
     },
     {
@@ -2037,7 +2037,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 255
     },
     {
@@ -2177,9 +2177,9 @@
       "id": 272
     },
     {
-      "name": "Teach your dog a new trick",
+      "name": "Recruit others into the Random Acts of Random family",
       "link": "",
-      "image": "assets/icon-relaxation.png",
+      "image": "assets/icon-recreation.png",
       "type": "Relaxation",
       "status": "unassigned",
       "id": 273
@@ -2205,7 +2205,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 276
     },
     {
@@ -2225,9 +2225,9 @@
       "id": 278
     },
     {
-      "name": "Draft your living will",
-      "link": "https://www.investopedia.com/terms/l/livingwill.asp",
-      "image": "assets/icon-life-maintenance.png",
+      "name": "Follow Misha Tuesday on Instagram",
+      "link": "https://www.instagram.com/mishatuesday/",
+      "image": "https://images.squarespace-cdn.com/content/v1/58c183731b631b9e6432fbc5/1585150695752-U1BWL2MYUJ70GP1XS7V2/misha-19fall.png?format=1000w",
       "type": "Life Maintenance",
       "status": "unassigned",
       "id": 279
@@ -2357,7 +2357,7 @@
       "link": "https://en.wikipedia.org/wiki/Periodic_table",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 295
     },
     {
@@ -2457,9 +2457,9 @@
       "id": 307
     },
     {
-      "name": "Draft your living will",
-      "link": "https://www.investopedia.com/terms/l/livingwill.asp",
-      "image": "assets/icon-life-maintenance.png",
+      "name": "Take a chance and roll the dice",
+      "link": "",
+      "image": "assets/icon-recreation.png",
       "type": "Life Maintenance",
       "status": "unassigned",
       "id": 308
@@ -2493,7 +2493,7 @@
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 312
     },
     {
@@ -2513,9 +2513,9 @@
       "id": 314
     },
     {
-      "name": "Draft your living will",
-      "link": "https://www.investopedia.com/terms/l/livingwill.asp",
-      "image": "assets/icon-life-maintenance.png",
+      "name": "Read about the Jack and Newell Building in Australia",
+      "link": "https://en.wikipedia.org/wiki/Jack_and_Newell_Building",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jack_and_Newell_Building%2C_2015.jpg/360px-Jack_and_Newell_Building%2C_2015.jpg",
       "type": "Life Maintenance",
       "status": "unassigned",
       "id": 315

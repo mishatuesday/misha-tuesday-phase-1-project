@@ -70,7 +70,6 @@ function shuffleMissions(missions) {
         // where x is the index for assignedMissions[] and missions.id is the database ID number
     //     console.log("assignMission")
     assignedMissions[x] = allMissions[mission.id-1]
-    debugger
     /// WTFF is wrong with this???? It's assigning wrong missions!!!! off by one!
     // // assignedMissions[x].id = x+1
     const date = getTodaysDate()
