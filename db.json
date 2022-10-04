@@ -165,7 +165,7 @@
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "unassigned",
+      "status": "complete",
       "id": 21
     },
     {
@@ -877,7 +877,7 @@
       "link": "https://en.wikipedia.org/wiki/Periodic_table",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 110
     },
     {
@@ -1589,7 +1589,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 199
     },
     {
@@ -1733,7 +1733,7 @@
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 217
     },
     {
@@ -2189,7 +2189,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 274
     },
     {
@@ -2883,52 +2883,12 @@
   ],
   "assigned": [
     {
-      "name": "Learn how to use a french press",
-      "link": "https://en.wikipedia.org/wiki/French_press",
+      "name": "this is not a mission",
+      "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "complete",
+      "status": "unassigned",
       "id": 1
-    },
-    {
-      "name": "Create or update your resume",
-      "link": "",
-      "image": "assets/icon-life-maintenance.png",
-      "type": "Life Maintenance",
-      "status": "complete",
-      "id": 2
-    },
-    {
-      "name": "Learn to sew on a button",
-      "link": "",
-      "image": "assets/icon-education.png",
-      "type": "Education",
-      "status": "complete",
-      "id": 3
-    },
-    {
-      "name": "Find a DIY to do",
-      "link": "",
-      "image": "assets/icon-diy.png",
-      "type": "D.I.Y.",
-      "status": "complete",
-      "id": 4
-    },
-    {
-      "name": "Pick up litter around your favorite park",
-      "link": "",
-      "image": "assets/icon-charity.png",
-      "type": "Charity",
-      "status": "complete",
-      "id": 5
-    },
-    {
-      "name": "Create a cookbook with your favorite recipes",
-      "link": "",
-      "image": "assets/icon-cooking.png",
-      "type": "Cooking",
-      "status": "complete",
-      "id": 6
     }
   ]
 }
