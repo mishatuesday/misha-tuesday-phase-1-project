@@ -2,6 +2,11 @@
     display: none;
 }
 
+#radar {
+    max-height: 80px;
+    visibility: hidden;
+}
+
 button {
     padding: 3px;
 }
