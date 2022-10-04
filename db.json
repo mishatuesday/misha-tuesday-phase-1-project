@@ -875,9 +875,9 @@
     {
       "name": "Learn the periodic table",
       "link": "https://en.wikipedia.org/wiki/Periodic_table",
-      "image": "assets/icon-education.png",
+      "image": "https://www.thoughtco.com/thmb/pLQknkmU62KHTXwDFDi4SeYWzKg=/1333x1000/smart/filters:no_upscale()/what-are-the-first-20-elements-608820-FINAL-5b758ab446e0fb002c67279a.png",
       "type": "Education",
-      "status": "assigned 10/04/22",
+      "status": "complete",
       "id": 110
     },
     {
@@ -1589,7 +1589,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "assigned 10/04/22",
+      "status": "complete",
       "id": 199
     },
     {
@@ -1731,7 +1731,7 @@
     {
       "name": "Make bread from scratch",
       "link": "",
-      "image": "assets/icon-cooking.png",
+      "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2020/04/woman-kneading-dough-bread.jpg?quality=82&strip=1",
       "type": "Cooking",
       "status": "assigned 10/04/22",
       "id": 217
@@ -2189,7 +2189,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "assigned 10/04/22",
+      "status": "complete",
       "id": 274
     },
     {

@@ -9,6 +9,7 @@ let selectedMission
 document.getElementById("mission-collection").addEventListener("click",(e) => showDetail(e))
 document.getElementById("mission-complete").addEventListener("click", (e) => markComplete(e))
 document.getElementById("gimme").addEventListener("click", () => resetMissions())
+document.getElementById("add-custom-image").addEventListener("submit", (e) => addCustomImage(e))
 
 function getAllMissions() {
     fetch(missionsUrl)
@@ -38,10 +39,8 @@ function initialize(missions) {
     }
 
 function checkAssigned(mission) {
-    console.log("checkAssigned()")
     if (mission.status != "unassigned") {
         assignedMissions.push(mission)
-        console.log("mission pushed")
     }
 }
 
@@ -53,7 +52,7 @@ function checkAssigned(mission) {
 // }
 
 function shuffleMissions(missions) { 
-    console.log("shuffleMissions()") // i got this array shuffle function from stackoverflow
+    // i got this array shuffle function from stackoverflow
         // let currentIndex = missions.length,  randomIndex;
       
         // // While there remain elements to shuffle.
@@ -106,7 +105,6 @@ function shuffleMissions(missions) {
     }
 
     function displayNav(mission) {
-        console.log("displayNav")
         const newMission = document.createElement("p")
         const newImg = document.createElement("img")
         const newName = document.createElement("span")
@@ -135,26 +133,30 @@ function showDetail(e) {
         } else {
             selectedMission = e.target.parentElement.id
         }
-        const thisMission = allMissions[selectedMission-1]
-        const detailImg = document.getElementById("detail-image")
-        detailImg.src = thisMission.image
-        detailImg.alt = thisMission.type
-        document.getElementById("mission-name").textContent = thisMission.name
-        document.getElementById("mission-status").textContent = thisMission.status
-        document.getElementById("mission-complete").style.display = "block"
-        document.getElementById("mission-mod-menu").style.display = "block"
-        if (thisMission.link != "") {
-            missionLink.style.display = "block"
-            missionLink.href = allMissions[selectedMission].link
-        } else {
-            missionLink.style.display = "none"
-        }
-        if (thisMission.status === "complete") {
-            document.getElementById("mission-mod-menu").style.display = "none"
-        } else {
-            document.getElementById("mission-mod-menu").style.display = "block"
-        }
+        displayDetail(selectedMission)
     }
+}
+
+function displayDetail(selectedMission) {
+const thisMission = allMissions[selectedMission-1]
+const detailImg = document.getElementById("detail-image")
+detailImg.src = thisMission.image
+detailImg.alt = thisMission.type
+document.getElementById("mission-name").textContent = thisMission.name
+document.getElementById("mission-status").textContent = thisMission.status
+document.getElementById("mission-complete").style.display = "block"
+document.getElementById("mission-mod-menu").style.display = "block"
+if (thisMission.link != "") {
+    missionLink.style.display = "block"
+    missionLink.href = allMissions[selectedMission].link
+} else {
+    missionLink.style.display = "none"
+}
+if (thisMission.status === "complete") {
+    document.getElementById("mission-mod-menu").style.display = "none"
+} else {
+    document.getElementById("mission-mod-menu").style.display = "block"
+}
 }
 
 function getTodaysDate() {
@@ -172,7 +174,7 @@ function markComplete() {
     // how to get index number from database id number??
     // assignedMissions[selectedMission-1].status = "complete" // this is not the way
     assignedMissions.forEach(mission => {
-        if (mission.id = selectedMission) {
+        if (mission.id === selectedMission) {
             mission.status = "complete"
         }
     })
@@ -197,8 +199,46 @@ function markComplete() {
     document.getElementById("mission-mod-menu").style.display = "none"
 }
 
+function addCustomImage(e) {
+    e.preventDefault()
+    const newImg = document.getElementById("add-url").value
+    //add to nav
+    document.getElementById(selectedMission).getElementsByTagName("img")[0].src = newImg
+    // add to assignedMissions AND allMissions 
+    assignedMissions.forEach((mission, index) => {
+        console.log(mission, index, selectedMission)
+        if (mission.id === parseInt(selectedMission)) {
+            console.log("it's a hit!")
+            assignedMissions[index].image = newImg
+            allMissions[selectedMission].image = newImg
+        }
+    })
+    /// PATCH database
+// ****
+const configObject = {
+    method: "PATCH",
+    headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    },
+    body: JSON.stringify({
+        image: newImg
+    })
+}
+fetch(`${missionsUrl}${selectedMission}`, configObject)
+.catch(err => alert(err))
+// change nav icon
+
+
+// ****
+    // redisplay
+    displayDetail(selectedMission)
+    e.target.reset()
+}
+
 function resetMissions() {
-    console.log("resetMissions()")
+
+        console.log("resetMissions()")
 }
 
 getAllMissions()
