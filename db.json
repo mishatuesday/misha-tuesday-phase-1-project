@@ -69,7 +69,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 9
     },
     {
@@ -77,7 +77,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "complete",
       "id": 10
     },
     {
@@ -165,7 +165,7 @@
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "complete",
+      "status": "unassigned",
       "id": 21
     },
     {
@@ -589,7 +589,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 74
     },
     {
@@ -597,7 +597,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "complete",
       "id": 75
     },
     {
@@ -853,7 +853,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 107
     },
     {
@@ -861,7 +861,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "complete",
       "id": 108
     },
     {
@@ -1333,7 +1333,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 167
     },
     {
@@ -1645,7 +1645,7 @@
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
-      "status": "complete",
+      "status": "unassigned",
       "id": 206
     },
     {
@@ -1813,7 +1813,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "complete",
+      "status": "unassigned",
       "id": 227
     },
     {
@@ -2133,7 +2133,7 @@
       "link": "",
       "image": "assets/icon-music.png",
       "type": "Music",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 267
     },
     {
@@ -2277,7 +2277,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "complete",
+      "status": "unassigned",
       "id": 285
     },
     {
@@ -2685,7 +2685,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "complete",
+      "status": "unassigned",
       "id": 336
     },
     {
