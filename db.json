@@ -709,7 +709,7 @@
       "link": "https://github.com/explore",
       "image": "assets/icon-charity.png",
       "type": "Charity",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 89
     },
     {
@@ -749,7 +749,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 94
     },
     {
@@ -1293,7 +1293,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 162
     },
     {
@@ -1845,7 +1845,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 231
     },
     {
@@ -1949,7 +1949,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 244
     },
     {
@@ -2037,7 +2037,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 255
     },
     {
@@ -2205,7 +2205,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 276
     },
     {
@@ -2253,7 +2253,7 @@
       "link": "https://en.wikipedia.org/wiki/Morse_code",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 282
     },
     {
@@ -2421,7 +2421,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "assigned 10/04/22",
+      "status": "unassigned",
       "id": 303
     },
     {
@@ -2493,7 +2493,7 @@
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
-      "status": "unassigned",
+      "status": "assigned 10/04/22",
       "id": 312
     },
     {
