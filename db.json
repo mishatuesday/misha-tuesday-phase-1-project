@@ -5,7 +5,7 @@
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
-      "status": "unassigned",
+      "status": "assigned 10/05/22",
       "id": 1
     },
     {
@@ -317,7 +317,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 10/05/22",
       "id": 40
     },
     {
@@ -605,7 +605,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned 10/05/22",
+      "status": "unassigned",
       "id": 76
     },
     {
@@ -781,7 +781,7 @@
       "link": "https://en.wikipedia.org/wiki/Ziggurat",
       "image": "assets/icon-diy.png",
       "type": "Relaxation",
-      "status": "assigned 10/05/22",
+      "status": "unassigned",
       "id": 98
     },
     {
@@ -965,7 +965,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/05/22",
       "id": 121
     },
     {
@@ -1117,7 +1117,7 @@
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "assigned 10/05/22",
+      "status": "unassigned",
       "id": 140
     },
     {
@@ -2845,7 +2845,7 @@
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
-      "status": "assigned 10/05/22",
+      "status": "unassigned",
       "id": 356
     },
     {
@@ -2853,7 +2853,7 @@
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
-      "status": "unassigned",
+      "status": "assigned 10/05/22",
       "id": 357
     },
     {

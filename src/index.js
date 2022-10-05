@@ -246,7 +246,7 @@ function checkAssigned(mission) {
             completedMissions = 0
             // radar.style.visibility = "visible"
             detailImg.src = refreshingImg
-            missionName.textContent = "Refreshing Missions"
+            missionName.textContent = "Getting New Missions"
             statusBar.textContent = ""
             missionLink.style.display = "none"
             // document.getElementById("detail-name").textContent = "Refreshing Missions"
