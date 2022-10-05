@@ -246,17 +246,17 @@ function checkAssigned(mission) {
             completedMissions = 0
             // radar.style.visibility = "visible"
             detailImg.src = refreshingImg
-            missionName.textContent = ""
+            missionName.textContent = "Refreshing Missions"
             statusBar.textContent = ""
             missionLink.style.display = "none"
-            document.getElementById("detail-name").textContent = "Refreshing Missions"
+            // document.getElementById("detail-name").textContent = "Refreshing Missions"
             setTimeout(refreshPage, 3000)
             // *** and call getAllMissions (i think)
             
         }
         
         function refreshPage() {
-            document.getElementById("detail-main").textContent = ""
+            missionName.textContent = ""
             // radar.style.visibility = "hidden"
             detailImg.src = "assets/RAoR.png"
             document.getElementById("gimme").style.display = "none"
