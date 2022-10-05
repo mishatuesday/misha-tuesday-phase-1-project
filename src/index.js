@@ -249,14 +249,14 @@ function checkAssigned(mission) {
             missionName.textContent = ""
             statusBar.textContent = ""
             missionLink.style.display = "none"
-            document.getElementById("headline").textContent = "Refreshing Missions"
+            document.getElementById("detail-name").textContent = "Refreshing Missions"
             setTimeout(refreshPage, 3000)
             // *** and call getAllMissions (i think)
             
         }
         
         function refreshPage() {
-            document.getElementById("headline").textContent = "Random Acts of Random"
+            document.getElementById("detail-main").textContent = ""
             // radar.style.visibility = "hidden"
             detailImg.src = "assets/RAoR.png"
             document.getElementById("gimme").style.display = "none"
