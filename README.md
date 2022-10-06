@@ -9,7 +9,7 @@ Clone repo to a local directory and run `json-server --watch db.json`
 ## Usage
 
 Opening index.html will assign 5 activities, or 'missions.' The default image for each mission is
-the icon for the type as enumerated above. Depending on the state of the mission library, there may already be custom images added for some of the missions. You can add or replace image URLs for any assigned mission. You can also mark missions complete (when you have done them--honor system!)
+the icon for the category as enumerated above. Depending on the state of the mission library, there may already be custom images added for some of the missions. You can add or replace image URLs for any assigned mission. You can also mark missions complete (when you have done them--honor system!)
 
 Once three or more missions are complete, you may click the 'Get All New Missions' button, which replaces all assigned missions with five newly selected missions. If you get missions you've done before, any custom images added will be retained.
 
