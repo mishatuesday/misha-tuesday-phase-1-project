@@ -8,6 +8,7 @@ const missionLink = document.getElementById("mission-link")
 const statusBar = document.getElementById("mission-status")
 const navBar = document.getElementById("mission-collection")
 const refreshingImg = "assets/radar.gif"
+const newGameText = "You are about to receive 5 random missions. For maximum enjoyment, you should resolve to do your best to complete and enjoy them. You will be able to exchange them for new ones when at least 3 have been marked complete."
 let allMissions = []
 let assignedMissions = []
 let selectedMission
@@ -30,6 +31,7 @@ function initialize(missions) {
     allMissions.forEach((mission) => checkAssigned(mission))
     // checkAssigned pushes into assignedMissions if they aren't unassigned.
     if (assignedMissions.length < 5) {
+        alert(newGameText)
         shuffleMissions(allMissions)
         // *** shuffleMissions must push into assignedMissions via assignMission(mission)
     }
@@ -66,7 +68,6 @@ function checkAssigned(mission) {
         
         function assignMission(x, mission) {
             // where x is the index for assignedMissions[] and missions.id is the database ID number
-            //     console.log("assignMission")
             assignedMissions[x] = allMissions[mission.id-1]
             /// WTFF is wrong with this???? It's assigning wrong missions!!!! off by one!
             // // assignedMissions[x].id = x+1
@@ -189,9 +190,7 @@ function checkAssigned(mission) {
             document.getElementById(selectedMission).getElementsByTagName("img")[0].src = newImg
             // add to assignedMissions AND allMissions 
             assignedMissions.forEach((mission, index) => {
-                console.log(mission, index, selectedMission)
                 if (mission.id === parseInt(selectedMission)) {
-                    console.log("it's a hit!")
                     assignedMissions[index].image = newImg
                     allMissions[selectedMission].image = newImg
                 }
