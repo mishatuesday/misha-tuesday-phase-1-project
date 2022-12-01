@@ -4,7 +4,10 @@ Random Acts of Random is a game which assigns and tracks completion of random ac
 
 ## Installation
 
-Clone repo to a local directory and run `json-server --watch db.json`
+Clone repo to a local directory and run `yarn install` or `npm install` then use `json-server --watch db.json` to serve JSON data.
+
+Open index.html in browser to view and use app.
+
 
 ## Usage
 

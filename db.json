@@ -1,7 +1,7 @@
 {
   "missions": [
     {
-      "name": "Prepare a dish from a foreign culture",
+      "name": "Invent a cocktail",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -25,7 +25,7 @@
       "id": 3
     },
     {
-      "name": "Learn how to french braid hair",
+      "name": "Look up the anatomy of your favorite insect",
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
@@ -35,7 +35,7 @@
     {
       "name": "Learn about a distributed version control system such as Git",
       "link": "https://en.wikipedia.org/wiki/Distributed_version_control",
-      "image": "assets/icon-education.png",
+      "image": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
       "type": "Education",
       "status": "unassigned",
       "id": 5
@@ -69,11 +69,11 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "assigned 12/01/22",
       "id": 9
     },
     {
-      "name": "Listen to a new podcast",
+      "name": "Listen to a band you've never heard",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -97,7 +97,7 @@
       "id": 12
     },
     {
-      "name": "Take a spontaneous road trip with some friends",
+      "name": "Pick a random direction and travel for one hour",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -115,9 +115,9 @@
     {
       "name": "Start a family tree",
       "link": "https://en.wikipedia.org/wiki/Family_tree",
-      "image": "assets/icon-social.png",
+      "image": "https://wp.en.aleteia.org/wp-content/uploads/sites/2/2021/07/shutterstock_250507201.jpg?crop=20px%2C416px%2C1174px%2C664px&resize=620%2C348&ssl=1",
       "type": "Social",
-      "status": "assigned 10/06/22",
+      "status": "unassigned",
       "id": 15
     },
     {
@@ -137,7 +137,7 @@
       "id": 17
     },
     {
-      "name": "Explore the nightlife of your city",
+      "name": "Explore the architecture of your city",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -201,7 +201,7 @@
       "id": 25
     },
     {
-      "name": "Volunteer and help out at a senior center",
+      "name": "Volunteer and help out at an animal shelter",
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
@@ -249,7 +249,7 @@
       "id": 31
     },
     {
-      "name": "Go see a Broadway production",
+      "name": "Go see a play",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -305,7 +305,7 @@
       "id": 38
     },
     {
-      "name": "Clean out your closet and donate the clothes you've outgrown",
+      "name": "Repurpose an article of clothing",
       "link": "",
       "image": "assets/icon-charity.png",
       "type": "Charity",
@@ -313,11 +313,11 @@
       "id": 39
     },
     {
-      "name": "Take a spontaneous road trip with some friends",
+      "name": "Plan a vacation with friends",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
-      "status": "unassigned",
+      "status": "assigned 12/01/22",
       "id": 40
     },
     {
@@ -337,7 +337,7 @@
       "id": 42
     },
     {
-      "name": "Buy a new house decoration",
+      "name": "Go to a playground and swing on the swings",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -361,8 +361,8 @@
       "id": 45
     },
     {
-      "name": "Learn how to make an Alexa skill",
-      "link": "https://developer.amazon.com/en-US/docs/alexa/custom-skills/steps-to-build-a-custom-skill.html",
+      "name": "Make a battery from a lemon or potato",
+      "link": "https://en.wikipedia.org/wiki/Lemon_battery",
       "image": "assets/icon-education.png",
       "type": "Education",
       "status": "unassigned",
@@ -393,7 +393,7 @@
       "id": 49
     },
     {
-      "name": "Catch up with a friend over a lunch date",
+      "name": "Contact someone you haven't seen in a long time",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -443,7 +443,7 @@
     {
       "name": "Learn about the Golden Ratio",
       "link": "https://en.wikipedia.org/wiki/Golden_ratio",
-      "image": "assets/icon-education.png",
+      "image": "https://symbolsage.com/wp-content/uploads/2021/06/golden-spiral-vs-fibonacci-spiral.png",
       "type": "Education",
       "status": "unassigned",
       "id": 56
@@ -473,10 +473,10 @@
       "id": 59
     },
     {
-      "name": "Clean out your closet and donate the clothes you've outgrown",
+      "name": "Make your own clothes",
       "link": "",
-      "image": "assets/icon-charity.png",
-      "type": "Charity",
+      "image": "assets/icon-education.png",
+      "type": "Education",
       "status": "unassigned",
       "id": 60
     },
@@ -529,10 +529,10 @@
       "id": 66
     },
     {
-      "name": "Improve your touch typing",
-      "link": "https://en.wikipedia.org/wiki/Touch_typing",
-      "image": "assets/icon-life-maintenance.png",
-      "type": "Life Maintenance",
+      "name": "Experiment with voice to text",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
       "status": "unassigned",
       "id": 67
     },
@@ -577,15 +577,15 @@
       "id": 72
     },
     {
-      "name": "Learn how to fold a paper crane",
-      "link": "",
+      "name": "Learn how to make a letter into its own envelope",
+      "link": "https://www.paperkawaii.com/easy-origami-envelope-tutorial/",
       "image": "assets/icon-education.png",
       "type": "Education",
       "status": "unassigned",
       "id": 73
     },
     {
-      "name": "Learn how to fold a paper crane",
+      "name": "Identify three birds in your neighborhood",
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
@@ -627,9 +627,9 @@
     {
       "name": "Visit a nearby museum",
       "link": "",
-      "image": "assets/icon-recreation.png",
+      "image": "https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg",
       "type": "Recreation",
-      "status": "assigned 10/06/22",
+      "status": "unassigned",
       "id": 79
     },
     {
@@ -665,7 +665,7 @@
       "id": 83
     },
     {
-      "name": "Wash your car",
+      "name": "Get a new accessory for your car or bike",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -673,7 +673,7 @@
       "id": 84
     },
     {
-      "name": "Play basketball with a group of friends",
+      "name": "Play dodge ball with a group of friends",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -713,7 +713,7 @@
       "id": 89
     },
     {
-      "name": "Make a bucket list",
+      "name": "Make a wish list",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -721,7 +721,7 @@
       "id": 90
     },
     {
-      "name": "Create a meal plan for the coming week",
+      "name": "Make your own spice blend",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -769,8 +769,8 @@
       "id": 96
     },
     {
-      "name": "Memorize a favorite quote or poem",
-      "link": "",
+      "name": "Write a poem about a random subject",
+      "link": "https://en.wikipedia.org/wiki/Special:Random",
       "image": "assets/icon-education.png",
       "type": "Education",
       "status": "unassigned",
@@ -787,21 +787,21 @@
     {
       "name": "Solve a Rubik's cube",
       "link": "",
-      "image": "assets/icon-recreation.png",
+      "image": "https://media.gamestop.com/i/gamestop/10130552/Rubiks-Cube",
       "type": "Recreation",
       "status": "unassigned",
       "id": 99
     },
     {
-      "name": "Explore a park you have never been to before",
-      "link": "",
+      "name": "Make a painted rock and leave it outdoors for someone to find",
+      "link": "https://en.wikipedia.org/wiki/The_Kindness_Rocks_Project",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
       "status": "unassigned",
       "id": 100
     },
     {
-      "name": "Create a meal plan for the coming week",
+      "name": "Pre-make lunches for the week",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -825,23 +825,23 @@
       "id": 103
     },
     {
-      "name": "Learn how to french braid hair",
-      "link": "",
+      "name": "Make a $1.75 microscope",
+      "link": "https://ktvz.com/news/national-world/cnn-world/2022/09/14/3-obscure-scientific-discoveries-that-had-an-outsize-impact-on-society/",
       "image": "assets/icon-education.png",
       "type": "Education",
       "status": "unassigned",
       "id": 104
     },
     {
-      "name": "Start a book you've never gotten around to reading",
+      "name": "Give a cherished book to a friend or acquaintance",
       "link": "",
-      "image": "assets/icon-relaxation.png",
-      "type": "Relaxation",
+      "image": "assets/icon-charity.png",
+      "type": "Charity",
       "status": "unassigned",
       "id": 105
     },
     {
-      "name": "Find a DIY to do",
+      "name": "Make your own hat",
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
@@ -857,15 +857,15 @@
       "id": 107
     },
     {
-      "name": "Memorize a favorite quote or poem",
+      "name": "Learn about the life of an author or poet",
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned 10/06/22",
+      "status": "unassigned",
       "id": 108
     },
     {
-      "name": "Start a garden",
+      "name": "Start a business",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -921,7 +921,7 @@
       "id": 115
     },
     {
-      "name": "Learn how to fold a paper crane",
+      "name": "Plant an indoor herb garden",
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
@@ -961,7 +961,7 @@
       "id": 120
     },
     {
-      "name": "Play a video game",
+      "name": "Play a verbal word game with a friend",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1033,7 +1033,7 @@
       "id": 129
     },
     {
-      "name": "Go see a Broadway production",
+      "name": "Go see a local band live",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1045,7 +1045,7 @@
       "link": "",
       "image": "assets/icon-music.png",
       "type": "Music",
-      "status": "unassigned",
+      "status": "assigned 12/01/22",
       "id": 131
     },
     {
@@ -1081,8 +1081,8 @@
       "id": 135
     },
     {
-      "name": "Go to the gym",
-      "link": "",
+      "name": "Do a scientific 7-minute workout",
+      "link": "https://archive.nytimes.com/well.blogs.nytimes.com/2013/05/09/the-scientific-7-minute-workout/",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
       "status": "unassigned",
@@ -1105,7 +1105,7 @@
       "id": 138
     },
     {
-      "name": "Create a meal plan for the coming week",
+      "name": "Invent a sauce or soup",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -1123,7 +1123,7 @@
     {
       "name": "Read a formal research paper on an interesting subject",
       "link": "",
-      "image": "assets/icon-education.png",
+      "image": "https://contenthub-static.grammarly.com/blog/wp-content/uploads/2022/02/Effective-Research-Paper.jpg",
       "type": "Education",
       "status": "unassigned",
       "id": 141
@@ -1137,7 +1137,7 @@
       "id": 142
     },
     {
-      "name": "Write a short story",
+      "name": "Write a short essay",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1209,15 +1209,15 @@
       "id": 151
     },
     {
-      "name": "Make a bucket list",
-      "link": "",
+      "name": "Make a banished words list",
+      "link": "https://www.lssu.edu/traditions/banishedwords/",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
       "status": "unassigned",
       "id": 152
     },
     {
-      "name": "Wash your car",
+      "name": "Take a bubble bath with candles",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -1265,8 +1265,8 @@
       "id": 158
     },
     {
-      "name": "Solve a Rubik's cube",
-      "link": "",
+      "name": "Paint or draw a random subject",
+      "link": "https://en.wikipedia.org/wiki/Special:Random",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
       "status": "unassigned",
@@ -1281,7 +1281,7 @@
       "id": 160
     },
     {
-      "name": "Visit your past teachers",
+      "name": "Visit your past boss",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1297,7 +1297,7 @@
       "id": 162
     },
     {
-      "name": "Take a bubble bath",
+      "name": "Take an ice bath",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -1305,7 +1305,7 @@
       "id": 163
     },
     {
-      "name": "Catch up with a friend over a lunch date",
+      "name": "Make a new acquaintance",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1313,10 +1313,10 @@
       "id": 164
     },
     {
-      "name": "Solve a Rubik's cube",
-      "link": "",
-      "image": "https://media.gamestop.com/i/gamestop/10130552/Rubiks-Cube",
-      "type": "Recreation",
+      "name": "Write a song about a random subject",
+      "link": "https://en.wikipedia.org/wiki/Special:Random",
+      "image": "",
+      "type": "Music",
       "status": "unassigned",
       "id": 165
     },
@@ -1329,7 +1329,7 @@
       "id": 166
     },
     {
-      "name": "Make your own LEGO creation",
+      "name": "Make your own popsicle stick creation",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1345,7 +1345,7 @@
       "id": 168
     },
     {
-      "name": "Go to a concert with local artists with some friends",
+      "name": "Go to an art showing by a local artist",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1353,7 +1353,7 @@
       "id": 169
     },
     {
-      "name": "Memorize a favorite quote or poem",
+      "name": "Learn about the life of one of your favorite musicians",
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
@@ -1429,7 +1429,7 @@
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "assigned 10/06/22",
+      "status": "unassigned",
       "id": 179
     },
     {
@@ -1441,7 +1441,7 @@
       "id": 180
     },
     {
-      "name": "Take a bubble bath",
+      "name": "Take a milk bath",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -1473,8 +1473,8 @@
       "id": 184
     },
     {
-      "name": "Learn about the Golden Ratio",
-      "link": "https://en.wikipedia.org/wiki/Golden_ratio",
+      "name": "Learn about the Georgia Guidestones",
+      "link": "https://en.wikipedia.org/wiki/Georgia_Guidestones",
       "image": "assets/icon-education.png",
       "type": "Education",
       "status": "unassigned",
@@ -1489,7 +1489,7 @@
       "id": 186
     },
     {
-      "name": "Organize your movie collection",
+      "name": "Inspect and service your car, bike, or other equipment",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -1513,7 +1513,7 @@
       "id": 189
     },
     {
-      "name": "Memorize the fifty states and their capitals",
+      "name": "Memorize all the essential amino acids",
       "link": "",
       "image": "assets/icon-education.png",
       "type": "Education",
@@ -1537,7 +1537,7 @@
       "id": 192
     },
     {
-      "name": "Learn a new recipe",
+      "name": "Alter a recipe and see if you like it",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -1545,15 +1545,15 @@
       "id": 193
     },
     {
-      "name": "Learn how to make an Alexa skill",
-      "link": "https://developer.amazon.com/en-US/docs/alexa/custom-skills/steps-to-build-a-custom-skill.html",
+      "name": "Spend a day without making any purchases",
+      "link": "https://en.wikipedia.org/wiki/Buy_Nothing_Day",
       "image": "assets/icon-education.png",
       "type": "Education",
-      "status": "unassigned",
+      "status": "assigned 12/01/22",
       "id": 194
     },
     {
-      "name": "Catch up with a friend over a lunch date",
+      "name": "Learn a card trick",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1577,7 +1577,7 @@
       "id": 197
     },
     {
-      "name": "Go see a Broadway production",
+      "name": "Go see a spoken word performance",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1585,7 +1585,7 @@
       "id": 198
     },
     {
-      "name": "Go see a Broadway production",
+      "name": "Perform at an open mic",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1673,10 +1673,10 @@
       "id": 209
     },
     {
-      "name": "Create a personal website",
+      "name": "Create or update your elevator pitch",
       "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
       "status": "unassigned",
       "id": 210
     },
@@ -1737,18 +1737,18 @@
       "id": 217
     },
     {
-      "name": "Prepare a dish from a foreign culture",
-      "link": "",
+      "name": "Try to replicate one of the experiments in The Food Lab",
+      "link": "https://www.amazon.com/Food-Lab-Cooking-Through-Science/dp/0393081087/ref=asc_df_0393081087/?tag=hyprod-20&linkCode=df0&hvadid=312126476072&hvpos=&hvnetw=g&hvrand=2108121584508524010&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9016919&hvtargid=pla-449973733389&psc=1",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
       "status": "unassigned",
       "id": 218
     },
     {
-      "name": "Go see a Broadway production",
+      "name": "Memorize the lyrics to a showtune",
       "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
+      "image": "assets/icon-music.png",
+      "type": "Music",
       "status": "unassigned",
       "id": 219
     },
@@ -1765,7 +1765,7 @@
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
-      "status": "unassigned",
+      "status": "assigned 12/01/22",
       "id": 221
     },
     {
@@ -1777,7 +1777,7 @@
       "id": 222
     },
     {
-      "name": "Hold a yard sale",
+      "name": "Find a song you've never heard by a band you know",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1809,7 +1809,7 @@
       "id": 226
     },
     {
-      "name": "Hold a yard sale",
+      "name": "Hold a barn dance",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1857,7 +1857,7 @@
       "id": 232
     },
     {
-      "name": "Start a garden",
+      "name": "Start a parody company",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -1873,7 +1873,7 @@
       "id": 234
     },
     {
-      "name": "Play a game of Monopoly",
+      "name": "Play a game of slaps",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1929,7 +1929,7 @@
       "id": 241
     },
     {
-      "name": "Create a meal plan for the coming week",
+      "name": "Invent a sandwich and name it",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -1945,7 +1945,7 @@
       "id": 243
     },
     {
-      "name": "Go see a movie in theaters with a few friends",
+      "name": "go to an arcade with friends",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -1961,7 +1961,7 @@
       "id": 245
     },
     {
-      "name": "Learn a new recipe",
+      "name": "Learn a new cooking technique",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -2017,7 +2017,7 @@
       "id": 252
     },
     {
-      "name": "Visit a nearby museum",
+      "name": "Create a mini-museum",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2041,7 +2041,7 @@
       "id": 255
     },
     {
-      "name": "Learn a new recipe",
+      "name": "Make up a recipe",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -2057,7 +2057,7 @@
       "id": 257
     },
     {
-      "name": "Visit a nearby museum",
+      "name": "Visit a laundromat  or hardware store as though you're an alien anthropologist",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2081,7 +2081,7 @@
       "id": 260
     },
     {
-      "name": "Buy a new house decoration",
+      "name": "Window shop at a pet store",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2105,7 +2105,7 @@
       "id": 263
     },
     {
-      "name": "Find a DIY to do",
+      "name": "Make your own fresh pasta",
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
@@ -2137,7 +2137,7 @@
       "id": 267
     },
     {
-      "name": "Go for a walk",
+      "name": "Go for a drive",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -2169,7 +2169,7 @@
       "id": 271
     },
     {
-      "name": "Watch a movie you'd never usually watch",
+      "name": "Rewatch a movie you love",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -2321,7 +2321,7 @@
       "id": 290
     },
     {
-      "name": "Practice coding in your favorite lanaguage",
+      "name": "Practice coding in a new language",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2337,7 +2337,7 @@
       "id": 292
     },
     {
-      "name": "Organize your dresser",
+      "name": "Organize your purse, work bag, or backpack",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -2369,7 +2369,7 @@
       "id": 296
     },
     {
-      "name": "Create a meal plan for the coming week",
+      "name": "Make chocolate-covered strawberries",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -2409,8 +2409,8 @@
       "id": 301
     },
     {
-      "name": "Organize your dresser",
-      "link": "",
+      "name": "Konmari your living space",
+      "link": "https://konmari.com/about-the-konmari-method/",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
       "status": "unassigned",
@@ -2425,7 +2425,7 @@
       "id": 303
     },
     {
-      "name": "Find a DIY to do",
+      "name": "Make your own table",
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
@@ -2465,7 +2465,7 @@
       "id": 308
     },
     {
-      "name": "Make a bucket list",
+      "name": "Make a favorites (bands, movies, etc) list",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -2473,10 +2473,10 @@
       "id": 309
     },
     {
-      "name": "Solve a Rubik's cube",
-      "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
+      "name": "Learn about a random subject",
+      "link": "https://media.gamestop.com/i/gamestop/10130552/Rubiks-Cube",
+      "image": "assets/icon-education.png",
+      "type": "Education",
       "status": "unassigned",
       "id": 310
     },
@@ -2489,7 +2489,7 @@
       "id": 311
     },
     {
-      "name": "Find a DIY to do",
+      "name": "Make your own cup or bowl",
       "link": "",
       "image": "assets/icon-diy.png",
       "type": "D.I.Y.",
@@ -2529,7 +2529,7 @@
       "id": 316
     },
     {
-      "name": "Have a paper airplane contest with some friends",
+      "name": "Write love notes to your future self",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -2553,10 +2553,10 @@
       "id": 319
     },
     {
-      "name": "Solve a Rubik's cube",
+      "name": "Learn to identify a wild edible plant (you don't have to eat it)",
       "link": "",
-      "image": "assets/icon-recreation.png",
-      "type": "Recreation",
+      "image": "assets/icon-education.png",
+      "type": "Education",
       "status": "unassigned",
       "id": 320
     },
@@ -2577,7 +2577,7 @@
       "id": 322
     },
     {
-      "name": "Meditate for five minutes",
+      "name": "Learn some breathing exercises",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -2585,7 +2585,7 @@
       "id": 323
     },
     {
-      "name": "Plan a vacation you've always wanted to take",
+      "name": "Plan a vacation you can't afford--yet!",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -2617,7 +2617,7 @@
       "id": 327
     },
     {
-      "name": "Go to the gym",
+      "name": "Practice balancing",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2625,7 +2625,7 @@
       "id": 328
     },
     {
-      "name": "Organize your dresser",
+      "name": "Organize your kitchen",
       "link": "",
       "image": "assets/icon-life-maintenance.png",
       "type": "Life Maintenance",
@@ -2681,7 +2681,7 @@
       "id": 335
     },
     {
-      "name": "Go see a movie in theaters with a few friends",
+      "name": "Have a theme party",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -2713,7 +2713,7 @@
       "id": 339
     },
     {
-      "name": "Hold a yard sale",
+      "name": "Hold an auction",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -2721,7 +2721,7 @@
       "id": 340
     },
     {
-      "name": "Buy a new house decoration",
+      "name": "Play a board game with strangers at a cafe",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2729,7 +2729,7 @@
       "id": 341
     },
     {
-      "name": "Go for a walk",
+      "name": "Go for a bike ride",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -2745,7 +2745,7 @@
       "id": 343
     },
     {
-      "name": "Prepare a dish from a foreign culture",
+      "name": "Have an eating contest with your friends",
       "link": "",
       "image": "assets/icon-cooking.png",
       "type": "Cooking",
@@ -2753,7 +2753,7 @@
       "id": 344
     },
     {
-      "name": "Catch up with a friend over a lunch date",
+      "name": "Go to a restaurant you've never been to ",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -2769,7 +2769,7 @@
       "id": 346
     },
     {
-      "name": "Start a garden",
+      "name": "Start a secret club",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2849,7 +2849,7 @@
       "id": 356
     },
     {
-      "name": "Go see a Broadway production",
+      "name": "Play croquet",
       "link": "",
       "image": "assets/icon-recreation.png",
       "type": "Recreation",
@@ -2857,7 +2857,7 @@
       "id": 357
     },
     {
-      "name": "Watch a movie you'd never usually watch",
+      "name": "Spend a day with no screen time",
       "link": "",
       "image": "assets/icon-relaxation.png",
       "type": "Relaxation",
@@ -2865,7 +2865,7 @@
       "id": 358
     },
     {
-      "name": "Have a bonfire with your close friends",
+      "name": "Make a vision board",
       "link": "",
       "image": "assets/icon-social.png",
       "type": "Social",
@@ -2873,12 +2873,252 @@
       "id": 359
     },
     {
-      "name": "Have a jam session with your friends",
+      "name": "Learn about the Devil's Tramping Ground",
+      "link": "https://en.wikipedia.org/wiki/Devil%27s_Tramping_Ground",
+      "image": "assets/icon-education.png",
+      "type": "Education",
+      "status": "unassigned",
+      "id": 360
+    },
+    {
+      "name": "Wash your car",
+      "link": "",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
+      "status": "unassigned",
+      "id": 361
+    },
+    {
+      "name": "Make a couch fort",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 362
+    },
+    {
+      "name": "Study a foreign language",
+      "link": "",
+      "image": "assets/icon-education.png",
+      "type": "Education",
+      "status": "unassigned",
+      "id": 363
+    },
+    {
+      "name": "Write a poem",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 364
+    },
+    {
+      "name": "Learn how to make a website",
+      "link": "",
+      "image": "assets/icon-education.png",
+      "type": "Education",
+      "status": "unassigned",
+      "id": 365
+    },
+    {
+      "name": "Learn the Chinese erhu",
       "link": "",
       "image": "assets/icon-music.png",
       "type": "Music",
-      "status": "assigned 10/06/22",
-      "id": 360
+      "status": "unassigned",
+      "id": 366
+    },
+    {
+      "name": "Learn Javascript",
+      "link": "",
+      "image": "assets/icon-education.png",
+      "type": "Education",
+      "status": "unassigned",
+      "id": 367
+    },
+    {
+      "name": "Learn to play a new instrument",
+      "link": "",
+      "image": "assets/icon-music.png",
+      "type": "Music",
+      "status": "unassigned",
+      "id": 368
+    },
+    {
+      "name": "Wash your car",
+      "link": "",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
+      "status": "unassigned",
+      "id": 369
+    },
+    {
+      "name": "Go to the gym",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 370
+    },
+    {
+      "name": "Create a cookbook with your favorite recipes",
+      "link": "",
+      "image": "assets/icon-cooking.png",
+      "type": "Cooking",
+      "status": "unassigned",
+      "id": 371
+    },
+    {
+      "name": "Buy a new house decoration",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 372
+    },
+    {
+      "name": "Learn how to play a new sport",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 373
+    },
+    {
+      "name": "Bake a pie with some friends",
+      "link": "",
+      "image": "assets/icon-cooking.png",
+      "type": "Cooking",
+      "status": "unassigned",
+      "id": 374
+    },
+    {
+      "name": "Contribute code or a monetary donation to an open-source software project",
+      "link": "https://github.com/explore",
+      "image": "assets/icon-charity.png",
+      "type": "Charity",
+      "status": "unassigned",
+      "id": 375
+    },
+    {
+      "name": "Play a game of Monopoly",
+      "link": "",
+      "image": "assets/icon-social.png",
+      "type": "Social",
+      "status": "unassigned",
+      "id": 376
+    },
+    {
+      "name": "Plant a tree",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 377
+    },
+    {
+      "name": "Pot some plants and put them around your house",
+      "link": "",
+      "image": "assets/icon-relaxation.png",
+      "type": "Relaxation",
+      "status": "unassigned",
+      "id": 378
+    },
+    {
+      "name": "Configure two-factor authentication on your accounts",
+      "link": "https://en.wikipedia.org/wiki/Multi-factor_authentication",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
+      "status": "unassigned",
+      "id": 379
+    },
+    {
+      "name": "Memorize a favorite quote or poem",
+      "link": "",
+      "image": "assets/icon-education.png",
+      "type": "Education",
+      "status": "unassigned",
+      "id": 380
+    },
+    {
+      "name": "Patronize a local independent restaurant",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 381
+    },
+    {
+      "name": "Binge watch a trending series",
+      "link": "",
+      "image": "assets/icon-recreation.png",
+      "type": "Recreation",
+      "status": "unassigned",
+      "id": 382
+    },
+    {
+      "name": "Look at pictures and videos of cute animals",
+      "link": "",
+      "image": "assets/icon-relaxation.png",
+      "type": "Relaxation",
+      "status": "unassigned",
+      "id": 383
+    },
+    {
+      "name": "Learn how to make an Alexa skill",
+      "link": "https://developer.amazon.com/en-US/docs/alexa/custom-skills/steps-to-build-a-custom-skill.html",
+      "image": "assets/icon-education.png",
+      "type": "Education",
+      "status": "unassigned",
+      "id": 384
+    },
+    {
+      "name": "Make a to-do list for your week",
+      "link": "",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
+      "status": "unassigned",
+      "id": 385
+    },
+    {
+      "name": "Do something nice for someone you care about",
+      "link": "",
+      "image": "assets/icon-social.png",
+      "type": "Social",
+      "status": "unassigned",
+      "id": 386
+    },
+    {
+      "name": "Mow your lawn",
+      "link": "",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
+      "status": "unassigned",
+      "id": 387
+    },
+    {
+      "name": "Find a charity and donate to it",
+      "link": "",
+      "image": "assets/icon-charity.png",
+      "type": "Charity",
+      "status": "unassigned",
+      "id": 388
+    },
+    {
+      "name": "Organize a bookshelf",
+      "link": "",
+      "image": "assets/icon-life-maintenance.png",
+      "type": "Life Maintenance",
+      "status": "unassigned",
+      "id": 389
+    },
+    {
+      "name": "Start a band",
+      "link": "",
+      "image": "assets/icon-music.png",
+      "type": "Music",
+      "status": "unassigned",
+      "id": 390
     }
   ],
   "assigned": [

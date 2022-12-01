@@ -8,7 +8,7 @@ const missionLink = document.getElementById("mission-link")
 const statusBar = document.getElementById("mission-status")
 const navBar = document.getElementById("mission-collection")
 const refreshingImg = "assets/radar.gif"
-const newGameText = "You are about to receive 5 random missions. For maximum enjoyment, you should resolve to do your best to complete and enjoy them. You will be able to exchange them for new ones when at least 3 have been marked complete."
+const newGameText = "You are about to receive 5 random missions. For maximum effect, please resolve to do your best to complete and enjoy them in a way that improves your life or your world. You will be able to exchange them for new ones when at least 3 have been marked complete."
 let allMissions = []
 let assignedMissions = []
 let selectedMission
@@ -45,16 +45,7 @@ function checkAssigned(mission) {
     }
 }
 
-// function getMissionsFromLibrary() {
-    //     fetch(libraryUrl)
-    //     .then(resp => resp.json())
-    //     .then((missions) => shuffleMissions(missions))
-    //     // .catch(err => alert(err))
-    // }
-    
     function shuffleMissions(missions) { 
-        
-        
         for (x=assignedMissions.length-completedMissions; x<5; x++) {
             const randomMission = Math.floor(Math.random()*missions.length)
             if (missions[randomMission].status === "unassigned") {
@@ -63,14 +54,11 @@ function checkAssigned(mission) {
                 shuffleMissions(missions)
             }
         }
-
     }
         
         function assignMission(x, mission) {
             // where x is the index for assignedMissions[] and missions.id is the database ID number
             assignedMissions[x] = allMissions[mission.id-1]
-            /// WTFF is wrong with this???? It's assigning wrong missions!!!! off by one!
-            // // assignedMissions[x].id = x+1
             const date = getTodaysDate()
             assignedMissions[x].status = `assigned: ${date}`
             const configObject = {
@@ -93,7 +81,6 @@ function checkAssigned(mission) {
             const newImg = document.createElement("img")
             const newName = document.createElement("span")
             newName.textContent = mission.name
-            // newName.id = mission.id 
             if (mission.status === "complete") {
                 newImg.src = completeIcon
             } else {
@@ -101,7 +88,6 @@ function checkAssigned(mission) {
             }
             newImg.className = "nav-icon"
             newImg.alt = mission.type
-            // newImg.id = mission.id
             newMission.id = mission.id
             newMission.onmouseover = function() {this.style.background = "#FFFFAA"}
             newMission.onmouseout = function() {this.style.background = "white"}
@@ -125,13 +111,13 @@ function checkAssigned(mission) {
             const thisMission = allMissions[selectedMission-1]
             detailImg.src = thisMission.image
             detailImg.alt = thisMission.type
-            missionName.textContent = thisMission.name
+            missionName.textContent = `${thisMission.type}: ${thisMission.name}`
             statusBar.textContent = thisMission.status
             document.getElementById("mission-complete").style.display = "block"
             document.getElementById("mission-mod-menu").style.display = "block"
             if (thisMission.link != "") {
                 missionLink.style.display = "block"
-                missionLink.href = allMissions[selectedMission].link
+                missionLink.href = thisMission.link
             } else {
                 missionLink.style.display = "none"
             }
@@ -156,9 +142,6 @@ function checkAssigned(mission) {
         function markComplete() {
             completedMissions++
             thisMission = allMissions[selectedMission]
-            // change status of assignedMission[?]
-            // how to get index number from database id number??
-            // assignedMissions[selectedMission-1].status = "complete" // this is not the way
             assignedMissions.forEach(mission => {
                 if (mission.id === parseInt(selectedMission)) {
                     mission.status = "complete"
@@ -219,7 +202,7 @@ function checkAssigned(mission) {
         }
         
         function canReset() {
-            if (completedMissions / assignedMissions.length > .49) document.getElementById("gimme").style.display = "block"
+            if (completedMissions / assignedMissions.length > .45) document.getElementById("gimme").style.display = "block"
         }
         
         function resetMissions() {
@@ -248,10 +231,7 @@ function checkAssigned(mission) {
             missionName.textContent = "Getting New Missions"
             statusBar.textContent = ""
             missionLink.style.display = "none"
-            // document.getElementById("detail-name").textContent = "Refreshing Missions"
-            setTimeout(refreshPage, 3000)
-            // *** and call getAllMissions (i think)
-            
+            setTimeout(refreshPage, 3000)            
         }
         
         function refreshPage() {
